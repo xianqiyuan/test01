@@ -96,8 +96,8 @@
 #define RX_PW_P5        0x16  // 'RX payload width, pipe5' register address 
 #define FIFO_STATUS     0x17  // 'FIFO Status Register' register address 
 
-#define TX_ADR_WIDTH    3   //3字节的地址宽度 
-#define RX_ADR_WIDTH    3   //3字节的地址宽度 
+#define TX_ADR_WIDTH    5   //5字节的地址宽度 
+#define RX_ADR_WIDTH    5   //5字节的地址宽度 
 #define TX_PLOAD_WIDTH  4  //4字节的用户数据宽度 
 #define RX_PLOAD_WIDTH  4  //4字节的用户数据宽度 
 

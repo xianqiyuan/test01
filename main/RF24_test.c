@@ -12,8 +12,8 @@
 #include "driver/spi_master.h"
 
 
-u8 TX_ADDRESS[TX_ADR_WIDTH]={0x34,0x43,0x10}; //发送地址
-u8 RX_ADDRESS[RX_ADR_WIDTH]={0x34,0x43,0x10}; //发送地址
+u8 TX_ADDRESS[TX_ADR_WIDTH]={0x34,0x43,0x10,0x55,0xaa}; //发送地址
+u8 RX_ADDRESS[RX_ADR_WIDTH]={0x34,0x43,0x10,0x55,0xaa}; //发送地址
 
 u8 Tx_Buf[4]={0};
 u8 Rx_Buf[4];
