@@ -146,7 +146,7 @@ void RX_Mode(void)
    SPI_RW_Reg(WRITE_REG+RF_CH,RF_CH_NUM);      //设置RF通信频率     
    SPI_RW_Reg(WRITE_REG+RX_PW_P0,RX_PLOAD_WIDTH);//选择通道 0的有效数据宽度       
    SPI_RW_Reg(WRITE_REG+RF_SETUP,0x0b);//设置TX发射参数,0db增益,2Mbps,低噪声增益开启    
-   SPI_RW_Reg(WRITE_REG+CONFIG, 0x0b);//配置基本工作模式的参数;PWR_UP,1B CRC,接收模式  
+   SPI_RW_Reg(WRITE_REG+CONFIG, 0x0F);//配置基本工作模式的参数;PWR_UP,2B CRC,接收模式  
    Sta=SPI_Read(RF_STATUS);  //读取状态寄存器的值       
    SPI_RW_Reg(WRITE_REG+RF_STATUS,Sta); //清除TX_DS或MAX_RT中断标志 
    SPI_RW_Reg(FLUSH_RX,0xff);//清除 RX FIFO寄存器
